@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Fullstack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<meta name="google-site-verification" content="PaTvF3O_7ZNNuuwvr6uVLDwKKYkaOEq8OJZqAVAidXA" />
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">
+    <div class="nav-logo-dot"></div>
+    DEV.PORTFOLIO
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">Обо мне</a></li>
+    <li><a href="#skills">Навыки</a></li>
+    <li><a href="#projects">Проекты</a></li>
+    <li><a href="#contact" class="nav-cta">Связаться</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-orb orb1"></div>
+  <div class="hero-orb orb2"></div>
+
+  <div class="hero-inner">
+    <div class="hero-badge">
+      <span class="badge-pill">OPEN TO WORK</span>
+      Fullstack Developer — доступен для проектов
+    </div>
+    <h1 class="hero-title">
+      <span class="line1">Fullstack</span>
+      <span class="line2">Developer.</span>
+    </h1>
+    <p class="hero-sub">
+      Строю современные веб-приложения от бэкенда до интерфейса.
+      Чистый код, быстрые решения, красивый результат.
+    </p>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn btn-accent">Смотреть работы ↓</a>
+      <a href="#contact" class="btn btn-ghost">Написать мне</a>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <div class="scroll-track"><div class="scroll-fill"></div></div>
+    <span class="scroll-label">Scroll</span>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-section">
+  <div class="marquee-track" id="marqueeTrack"></div>
+</div>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <div class="about-card-main">
+          <div class="about-card-header">
+            <div class="mac-dot dot-red"></div>
+            <div class="mac-dot dot-yellow"></div>
+            <div class="mac-dot dot-green"></div>
+          </div>
+          <div class="about-card-code">
+            <span class="code-purple">const</span> <span class="code-blue">developer</span> = {<br>
+            &nbsp;&nbsp;<span class="code-green">name</span>: <span class="code-orange">"Huzaifa"</span>,<br>
+            &nbsp;&nbsp;<span class="code-green">role</span>: <span class="code-orange">"Fullstack Dev"</span>,<br>
+            &nbsp;&nbsp;<span class="code-green">stack</span>: [<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-orange">"React"</span>, <span class="code-orange">"Node.js"</span>,<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-orange">"TypeScript"</span>,<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-orange">"PostgreSQL"</span><br>
+            &nbsp;&nbsp;],<br>
+            &nbsp;&nbsp;<span class="code-green">passion</span>: <span class="code-orange">"clean code"</span>,<br>
+            &nbsp;&nbsp;<span class="code-green">available</span>: <span class="code-purple">true</span><br>
+            };<span class="cursor-blink"></span>
+          </div>
+        </div>
+        <div class="about-card-float">
+          <div class="float-stat" id="expCounter">0</div>
+          <div class="float-label">лет опыта</div>
+        </div>
+      </div>
+
+      <div class="about-text reveal delay-2">
+        <div class="section-eyebrow">Обо мне</div>
+        <h2 class="section-heading" style="margin-bottom:28px;">Кто я<br>такой</h2>
+        <p>
+          Я <strong>fullstack-разработчик</strong> с глубокой экспертизой в создании
+          масштабируемых веб-приложений. Умею работать как с фронтендом, так и с бэкендом —
+          от пикселей до баз данных.
+        </p>
+        <p>
+          Мой подход: <strong>чистая архитектура</strong>, внимание к деталям и
+          постоянное изучение новых технологий. Люблю сложные задачи и нахожу
+          элегантные решения.
+        </p>
+        <div class="about-tags">
+          <span class="tag">HTML / CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">React</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Git</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills-section" id="skills">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-eyebrow">Экспертиза</div>
+      <h2 class="section-heading">Мой стек</h2>
+    </div>
+    <div class="skills-grid reveal">
+      <div class="skill-item">
+        <div class="skill-icon-wrap">⚡</div>
+        <div class="skill-name">Frontend</div>
+        <div class="skill-desc">Современные интерфейсы с плавными анимациями и отличным UX</div>
+        <div class="skill-techs">
+          <span class="tech-pill">HTML5</span>
+          <span class="tech-pill">CSS3</span>
+          <span class="tech-pill">JavaScript</span>
+          <span class="tech-pill">React</span>
+          <span class="tech-pill">TypeScript</span>
+        </div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon-wrap">🛠</div>
+        <div class="skill-name">Backend</div>
+        <div class="skill-desc">Надёжные API и серверная логика с высокой производительностью</div>
+        <div class="skill-techs">
+          <span class="tech-pill">Node.js</span>
+          <span class="tech-pill">Express</span>
+          <span class="tech-pill">REST API</span>
+          <span class="tech-pill">GraphQL</span>
+        </div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon-wrap">🗄️</div>
+        <div class="skill-name">Базы данных</div>
+        <div class="skill-desc">Проектирование схем и оптимизация запросов для любых объёмов</div>
+        <div class="skill-techs">
+          <span class="tech-pill">PostgreSQL</span>
+          <span class="tech-pill">MongoDB</span>
+          <span class="tech-pill">Redis</span>
+          <span class="tech-pill">Prisma</span>
+        </div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon-wrap">☁️</div>
+        <div class="skill-name">DevOps</div>
+        <div class="skill-desc">Контейнеризация, CI/CD и деплой в облако без головной боли</div>
+        <div class="skill-techs">
+          <span class="tech-pill">Docker</span>
+          <span class="tech-pill">GitHub Actions</span>
+          <span class="tech-pill">Vercel</span>
+          <span class="tech-pill">Nginx</span>
+        </div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon-wrap">🎨</div>
+        <div class="skill-name">UI / Design</div>
+        <div class="skill-desc">От концепта до пикселя — делаю красиво и функционально</div>
+        <div class="skill-techs">
+          <span class="tech-pill">Figma</span>
+          <span class="tech-pill">Tailwind</span>
+          <span class="tech-pill">Framer Motion</span>
+          <span class="tech-pill">GSAP</span>
+        </div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon-wrap">🤖</div>
+        <div class="skill-name">AI / Integrations</div>
+        <div class="skill-desc">Внедряю умные функции и интегрирую сторонние сервисы</div>
+        <div class="skill-techs">
+          <span class="tech-pill">OpenAI API</span>
+          <span class="tech-pill">Claude API</span>
+          <span class="tech-pill">Stripe</span>
+          <span class="tech-pill">Firebase</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects-section" id="projects">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-eyebrow">Работы</div>
+      <h2 class="section-heading">Избранные<br>проекты</h2>
+    </div>
+    <div class="projects-list reveal">
+      <div class="project-item">
+        <div class="project-num">01</div>
+        <div class="project-info">
+          <div class="project-title">Nexus — SaaS платформа для аналитики</div>
+          <div class="project-meta">
+            <span class="project-tag">React + Node.js</span>
+            <span>PostgreSQL · Redis · Docker</span>
+          </div>
+        </div>
+        <div class="project-arrow">↗</div>
+      </div>
+      <div class="project-item">
+        <div class="project-num">02</div>
+        <div class="project-info">
+          <div class="project-title">ShopFlow — E-commerce с AI-рекомендациями</div>
+          <div class="project-meta">
+            <span class="project-tag">Next.js + TypeScript</span>
+            <span>Stripe · OpenAI · MongoDB</span>
+          </div>
+        </div>
+        <div class="project-arrow">↗</div>
+      </div>
+      <div class="project-item">
+        <div class="project-num">03</div>
+        <div class="project-info">
+          <div class="project-title">TaskBoard — Realtime таск-менеджер</div>
+          <div class="project-meta">
+            <span class="project-tag">React + WebSockets</span>
+            <span>Express · PostgreSQL · JWT</span>
+          </div>
+        </div>
+        <div class="project-arrow">↗</div>
+      </div>
+      <div class="project-item">
+        <div class="project-num">04</div>
+        <div class="project-info">
+          <div class="project-title">CryptoTrack — Дашборд криптовалют</div>
+          <div class="project-meta">
+            <span class="project-tag">React + D3.js</span>
+            <span>REST API · Charts · PWA</span>
+          </div>
+        </div>
+        <div class="project-arrow">↗</div>
+      </div>
+      <div class="project-item">
+        <div class="project-num">05</div>
+        <div class="project-info">
+          <div class="project-title">MedApp — Приложение записи к врачу</div>
+          <div class="project-meta">
+            <span class="project-tag">React Native</span>
+            <span>Node.js · Firebase · Push</span>
+          </div>
+        </div>
+        <div class="project-arrow">↗</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats-section">
+  <div class="section-inner" style="padding-top:80px;padding-bottom:80px;">
+    <div class="stats-row reveal">
+      <div class="stat-box">
+        <div class="stat-number" data-target="40">0</div>
+        <div class="stat-label">Проектов в продакшне</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-number" data-target="5">0</div>
+        <div class="stat-label">Лет в разработке</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-number" data-target="99">0</div>
+        <div class="stat-label">% довольных клиентов</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-number" data-target="15">0</div>
+        <div class="stat-label">Технологий в стеке</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="contact-inner">
+    <div class="reveal">
+      <div class="section-eyebrow">Контакт</div>
+      <h2 class="contact-title">Давай<br>работать<br>вместе</h2>
+      <p class="contact-sub">
+        Есть проект или идея? Напиши — отвечу в течение 24 часов
+        и обсудим детали.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:huzaifa@example.com" class="contact-link">
+          <div class="link-icon">✉️</div>
+          <div class="link-text">
+            <div class="link-label">Email</div>
+            <div class="link-value">usanbaevhuzaifa@gmail.com</div>
+          </div>
+        </a>
+        <a href="#" class="contact-link">
+          <div class="link-icon">💬</div>
+          <div class="link-text">
+            <div class="link-label">Telegram</div>
+            <div class="link-value">@huzaifadevel</div>
+          </div>
+        </a>
+        <a href="#" class="contact-link">
+          <div class="link-icon">🔗</div>
+          <div class="link-text">
+            <div class="link-label">GitHub</div>
+            <div class="link-value">github.com/huzaifadevel</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="reveal delay-2">
+      <div class="contact-form">
+        <div class="form-row">
+          <input class="form-field" type="text" placeholder="Ваше имя">
+          <input class="form-field" type="email" placeholder="Email">
+        </div>
+        <input class="form-field" type="text" placeholder="Тема / проект">
+        <textarea class="form-field" placeholder="Расскажите о проекте..."></textarea>
+        <button class="btn-submit">Отправить сообщение →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-copy">© 2025 Huzaifa.dev — Fullstack Developer</div>
+  <div class="footer-links">
+    <a href="#">GitHub</a>
+    <a href="#">LinkedIn</a>
+    <a href="#">Behance</a>
+    <a href="#">Telegram</a>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
