@@ -911,7 +911,10 @@
     flex-shrink: 0;
   }
 
-  .link-text {}
+  .link-text {  display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
   .link-label { font-size: 12px; color: var(--muted); font-weight: 400; }
   .link-value { font-size: 15px; font-weight: 500; margin-top: 2px; }
 
